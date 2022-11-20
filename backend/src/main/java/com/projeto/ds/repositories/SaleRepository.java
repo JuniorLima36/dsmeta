@@ -1,5 +1,9 @@
 package com.projeto.ds.repositories;
 
-public interface SaleRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.projeto.ds.entities.Sale;
+
+public interface SaleRepository extends JpaRepository<Sale, Long> {
 
 }
